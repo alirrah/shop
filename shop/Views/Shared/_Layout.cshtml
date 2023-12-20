@@ -1,49 +1,78 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - shop</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <title>shop @ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/all.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/shop.styles.css" asp-append-version="true" />
+    <script src="~/js/all.min.js" defer></script>
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">shop</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+        <div class="top-bar">
+            <p class="address">337 Roncesvalles Ave, Toronto</p>
+            
+            <button class="language">
+                <img alt="flag" src="~/img/flag.png" />
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - shop - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                <p>USD</p>
+            </button>
         </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+        <div class="header">
+
+            <nav>
+                <ul>
+                    <li>
+                        <a asp-area="" asp-controller="Home" asp-action="Shop">Shop</a>
+                    </li>
+
+                    <li>
+                        <a asp-area="" asp-controller="Home" asp-action="NewArrivals">New Arrivals</a>
+                    </li>
+
+                    <li>
+                        <a asp-area="" asp-controller="Home" asp-action="BestSellers">Best Sellers</a>
+                    </li>
+
+                    <li>
+                        <a asp-area="" asp-controller="Home" asp-action="Pages">Pages</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a asp-area="" asp-controller="Home" asp-action="Index">
+                <img alt="logo" src="~/img/Uniso.png" />
+            </a>
+
+            <div>
+                <form>
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <input placeholder="Search..." />
+                </form>
+                
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <i class="fa-regular fa-user"></i>
+            </div>
+
+        </div>
+
+        <div class="promotional">
+            <p>COVID 19 UPDATE: WORLDWIDE FREESHIP 🚀</p>
+        </div>
+    </header>
+
+
+    @RenderBody()
+
+
+
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>
