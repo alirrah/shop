@@ -54,9 +54,9 @@
                     <input placeholder="Search..." />
                 </form>
                 
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a class="cart" asp-area="" asp-controller="Home" asp-action="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
 
-                <i class="fa-regular fa-user"></i>
+                <a asp-area="" asp-controller="Home" asp-action="Account"><i class="fa-regular fa-user"></i></a>
             </div>
 
         </div>
@@ -69,7 +69,64 @@
 
     @RenderBody()
 
+    <footer>
+        <div class="footer">
+            <div class="help">
+                <ul>
+                    <li>HELP</li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Shop">Shipping & Returns</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Order">Track Your Order</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="StoreFinder">Store Finder</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="FAGs">FAQs</a></li>
+                </ul>
+            </div>
 
+            <div class="about">
+                <ul>
+                    <li>ABOUT</li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Careers">Careers</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Affiliate">Become an Affiliate</a></li>
+                </ul>
+            </div>
+
+            <div class="categories">
+                <ul>
+                    <li>CATEGORIES</li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Shirts">Shirts</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Jeans">Jeans</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Footwear">Footwear</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Accessories">Accessories</a></li>
+                </ul>
+            </div>
+
+            <div class="new-sellers">
+                <p>JOIN THE LIST AND RECEIVE 15% OFF YOUR FIRST ORDER</p>
+
+                <form>
+                    <input placeholder="Your Email" />
+                    <button type="submit">SEND</button>
+                </form>
+
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <ul>
+                <li><a>© Uniso 2020. All Rights Reserved</a></li>
+                <li><a>Privacy Policy</a></li>
+                <li><a>Terms & Conditions</a></li>
+            </ul>
+
+            <img alt="payment methods" src="~/img/Payment Methods.png" />
+        </div>
+    </footer>
 
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)

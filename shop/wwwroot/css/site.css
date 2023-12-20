@@ -88,18 +88,35 @@ header .header div:last-child {
 }
 
 header .header div:last-child > * {
-    height: 2.4rem;
-    padding: 1.2rem;
+    height: 5rem;
+    padding: 1.8rem;
     border: 0.1rem #EEE solid;
 }
 
+header .header svg {
+    font-size: 1.6rem;
+}
 
 header .header div:last-child form {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
 
-    height: 5rem;
+header .header .cart {
+    position: relative;
+}
+
+header .header .cart::after {
+    content: "";
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    bottom: 1.1rem;
+    right: 1.7rem;
 }
 
 
@@ -111,4 +128,69 @@ header .promotional{
     color: white;
     padding: 1.2rem;
     font-size: 1.4rem;
+}
+
+footer .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: hsl(220, 18%, 97%);
+
+    padding: 4rem 0;
+}
+
+footer .footer ul li:first-child, footer .footer .new-sellers p {
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding-bottom: 1.6rem;
+}
+
+footer .footer ul li a {
+    font-size: 1.6rem;
+    display: inline-block;
+    padding: 0.5rem 0;
+}
+
+footer .footer .new-sellers form {
+    display: flex;
+    height: 4rem;
+    background-color: white;
+    border: 0.1rem solid #EEEEEE;
+    padding: 0 1.4rem;
+}
+
+footer .footer .new-sellers form input {
+    flex: 90%;
+}
+
+footer .footer .new-sellers form button {
+    flex: 10%;
+}
+
+footer .footer .new-sellers ul {
+    display: flex;
+    gap: 1.2rem;
+}
+
+footer .copyright {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.4rem;
+}
+
+footer .copyright ul {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+footer .copyright ul li {
+    padding: 0 1.2rem;
+    border-left: 0.1rem solid #EEEEEE;
+}
+
+footer .copyright ul li:first-child {
+    border-left: none;
 }
