@@ -1,0 +1,62 @@
+﻿@{
+    ViewData["Title"] = "- Register";
+}
+
+<div class="url">
+    <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+    /
+    <a asp-area="" asp-controller="Home" asp-action="Register" class="deactive">Register</a>
+</div>
+
+<section class="main">
+    <div class="card">
+        <h1 class="title">Register</h1>
+
+        <a href="#" class="login-google">
+            <img alt="google" src="~/img/google.png" />
+            CONTINUE WITH GOOGLE
+        </a>
+
+        <div class="divide">
+            <div class="divide-line"></div>
+
+            <p class="divide-text">OR</p>
+        </div>
+
+        <form>
+            <label>
+                Name
+                <br />
+                <input placeholder="Enter first name" />
+            </label>
+
+            <label>
+                Last Name
+                <br />
+                <input placeholder="Enter last name" />
+            </label>
+
+            <label>
+                Email
+                <br />
+                <input placeholder="Enter email" type="email" />
+            </label>
+
+            <label>
+                Password
+                <br />
+                <input placeholder="Enter Password" type="password" />
+            </label>
+
+            <label class="radioBtn">
+                <input type="radio">
+                I have read and accpet to <a asp-area="" asp-controller="Home" asp-action="Privacy">Our Term and Pricacy Policy</a>
+            </label>
+
+
+            <input type="submit" value="CREATE AN ACCOUNT" />
+        </form>
+    </div>
+</section>
+
+
