@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "- Login";
+}
+
+<div class="url">
+    <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+    /
+    <a asp-area="" asp-controller="Home" asp-action="Login" class="deactive">Login</a>
+</div>
+
+<section class="main">
+    <div class="card">
+        <h1 class="title">Login</h1>
+
+        <a href="#" class="login-google">
+            <img alt="google" src="~/img/google.png" />
+            CONTINUE WITH GOOGLE
+        </a>
+
+        <div class="divide">
+            <div class="divide-line"></div>
+
+            <p class="divide-text">OR</p>
+        </div>
+
+        <form>
+            <label>
+                Name
+                <br />
+                <input placeholder="Enter first name" />
+            </label>
+
+            <label>
+                Password
+                <br />
+                <input placeholder="Enter Password" />
+            </label>
+
+            <div class="lower-part">
+                <label>
+                    <input type="radio">
+                    Remember me
+                </label>
+                <a href="#">Forgot Password</a>
+            </div>
+
+            <input type="submit" value="LOGIN" />
+        </form>
+
+        <p class="register-text">New here? <a asp-area="" asp-controller="Home" asp-action="Register">Create an Account</a></p>
+    </div>
+</section>
+
+
