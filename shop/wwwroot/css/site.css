@@ -326,3 +326,208 @@ footer .copyright ul li:first-child {
     font-size: 1.4rem;
     text-decoration: underline;
 }
+
+
+.popup {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(0, 0%, 0%, 0.5);
+}
+
+.popup .card{
+    position: relative;
+    background-color: white;
+}
+
+.popup h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.popup p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.popup .move-up{
+    position: absolute;
+    top: 20rem;
+    left: 0;
+    right: 0;
+}
+
+.popup form {
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.popup form input {
+    padding: 1.6rem;
+    border: 0.1rem solid hsla(0, 0%, 40%, 1);
+    flex: 6;
+    font-size: 1.6rem;
+}
+
+.popup form input[type="submit"] {
+    background-color: black;
+    flex: 4;
+    color: white;
+}
+
+.slider {
+    background-color: hsla(17, 100%, 89%, 1);
+    display: flex;
+}
+
+.slider .right, .slider .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider .right{
+    position: relative;
+}
+
+.slider img{
+    padding-top: 10rem;
+    width: 50rem;
+    z-index: 1;
+}
+
+.slider .circle {
+    width: 50rem;
+    height: 50rem;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 1rem;
+    background: linear-gradient(to top right, hsla(220, 68%, 57%, 0.65), hsla(220, 59%, 65%, 0.33), hsla(221, 48%, 71%, 0.06));
+}
+
+.slider .left {
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20rem;
+    gap: 2rem;
+}
+
+.slider .left h1 {
+    font-weight: 600;
+    font-size: 6.4rem;
+}
+
+.slider .left p {
+    font-size: 1.4rem;
+}
+
+.slider .left a{
+    padding: 2rem 5rem;
+    border: 0.1rem solid black;
+    background-color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.collection {
+    display: flex;
+    justify-content: center;
+}
+
+.collection .category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+.collection .category {
+    background-color: hsla(19, 39%, 94%, 1);
+}
+
+.collection .category:first-child {
+    background-color: hsla(220, 38%, 97%, 1);
+}
+
+.collection .category:last-child {
+    background-color: hsla(218, 33%, 97%, 1);
+}
+
+.collection .content {
+    position: absolute;
+    bottom: 1rem;
+}
+
+.collection .content:nth-child(1) {
+    top: 1rem;
+}
+
+.collection .content h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.collection .content p {
+    font-size: 1.6rem;
+}
+
+.banner {
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.banner .collection {
+    position: relative;
+}
+
+.banner .collection .content {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1.4rem;
+    position: absolute;
+    top: 50%;
+    right: 30rem;
+    transform: translateY(-50%);
+}
+
+.banner .collection .content h3 {
+    color: white; 
+    font-weight: 600;
+    font-size: 6.4rem;
+    text-align: right;
+}
+
+.banner .collection .content a{
+    padding: 0.8rem 1.4rem;
+    background-color: white;
+    border: 0.1rem solid black;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.banner .collection .content p {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.banner .subbanner {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
