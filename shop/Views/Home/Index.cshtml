@@ -2,7 +2,85 @@
     ViewData["Title"] = "- Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<section class="slider">
+    <div class="left">
+        <h1>Autumn’s Coming...</h1>
+        <p>We started with humble beginnings — selling out of our basement and frantically shipping orders as soon as we woke up.</p>
+        <a asp-area="" asp-controller="Home" asp-action="Shop">SHOP NOW</a>
+    </div>
+    <div class="right">
+        <div class="circle"></div>
+        <img alt="man" src="~/img/man.png" />
+    </div>
+</section>
+
+<section class="collection">
+    <div class="category">
+        <img alt="jeans" src="~/img/jeans.png" />
+        <div class="content">
+            <h3>JEANS</h3>
+            <p>Must have item</p>
+        </div>
+    </div>
+
+    <div class="category">
+        <div class="content">
+            <h3>SHIRTS</h3>
+            <p>Summer Vibe</p>
+        </div>
+        <img alt="shirts" src="~/img/shirts.png" />
+    </div>
+
+    <div class="category">
+        <img alt="footwear" src="~/img/footwear.png" />
+        <div class="content">
+            <h3>FOOTWEAR</h3>
+            <p>Take you to anywhere</p>
+        </div>
+    </div>
+</section>
+
+<section class="banner">
+    <div class="collection">
+        <img alt="collection image" src="~/img/firstbanner.png" />
+        <div class="content">
+            <h3>Autumn Collection 2020</h3>
+            <a>SHOP THE COLLECTION</a>
+            <p>Selected Styles</p>
+        </div>
+    </div>
+    <div class="subbanner">
+        <div class="t-shirt">
+            <img alt="t-shirt image" src="~/img/secondbanner.png" />
+            <div class="content">
+                <h3>Classic Tee</h3>
+                <p>Enjoy the Summer</p>
+                <a>SHOP T-SHIRTS</a>
+            </div>
+        </div>
+        
+        <div class="t-shirt">
+            <img alt="t-shirt image" src="~/img/thirdbanner.png" />
+            <div class="content">
+                <h3>afterpay</h3>
+                <p>Shop Now. Enjoy Now. Pay Later.</p>
+                <a>VIEW ALL ITEMS</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="popup">
+    <div class="card">
+        <img alt="" src="~/img/popup.png" />
+        <div class="move-up">
+            <h1>DON’T MISS OUT</h1>
+            <p>Sign up to receive 20% off your next order</p>
+        </div>
+        <form>
+            <input type="email" placeholder="Enter Your Email" />
+            <input type="submit" value="SUBCRIBE" />
+        </form>
+
+    </div>
 </div>
