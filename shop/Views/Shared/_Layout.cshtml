@@ -12,56 +12,58 @@
 
 <body>
     <header>
-        <div class="top-bar">
-            <p class="address">337 Roncesvalles Ave, Toronto</p>
-            
-            <button class="language">
-                <img alt="flag" src="~/img/flag.png" />
+        <div class="top-bar flex justify-center">
+            <div class="container flex justify-space-between align-center">
+                <p class="address">337 Roncesvalles Ave, Toronto</p>
 
-                <p>USD</p>
-            </button>
-        </div>
+                <button class="language flex align-center">
+                    <img alt="flag" src="~/img/flag.png" />
 
-        <div class="header">
-
-            <nav>
-                <ul>
-                    <li>
-                        <a asp-area="" asp-controller="Home" asp-action="Shop">Shop</a>
-                    </li>
-
-                    <li>
-                        <a asp-area="" asp-controller="Home" asp-action="NewArrivals">New Arrivals</a>
-                    </li>
-
-                    <li>
-                        <a asp-area="" asp-controller="Home" asp-action="BestSellers">Best Sellers</a>
-                    </li>
-
-                    <li>
-                        <a asp-area="" asp-controller="Home" asp-action="Pages">Pages</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <a asp-area="" asp-controller="Home" asp-action="Index">
-                <img alt="logo" src="~/img/Uniso.png" />
-            </a>
-
-            <div>
-                <form>
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <input placeholder="Search..." />
-                </form>
-                
-                <a class="cart" asp-area="" asp-controller="Home" asp-action="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
-
-                <a asp-area="" asp-controller="Home" asp-action="Login"><i class="fa-regular fa-user"></i></a>
+                    <p>USD</p>
+                </button>
             </div>
-
         </div>
 
-        <div class="promotional">
+        <div class="header flex justify-center">
+            <div class="container flex justify-space-between align-center">
+                <nav>
+                    <ul class="flex align-center">
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Shop">Shop</a>
+                        </li>
+
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="NewArrivals">New Arrivals</a>
+                        </li>
+
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="BestSellers">Best Sellers</a>
+                        </li>
+
+                        <li>
+                            <a asp-area="" asp-controller="Home" asp-action="Pages">Pages</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a asp-area="" asp-controller="Home" asp-action="Index">
+                    <img alt="logo" src="~/img/Uniso.png" />
+                </a>
+
+                <div class="flex align-center">
+                    <form class="flex align-center">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input placeholder="Search..." />
+                    </form>
+
+                    <a class="cart" asp-area="" asp-controller="Home" asp-action="Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+
+                    <a asp-area="" asp-controller="Home" asp-action="Login"><i class="fa-regular fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="promotional flex justify-center align-center">
             <p>COVID 19 UPDATE: WORLDWIDE FREESHIP 🚀</p>
         </div>
     </header>
@@ -70,61 +72,73 @@
     @RenderBody()
 
     <footer>
-        <div class="footer">
-            <div class="help">
-                <ul>
-                    <li>HELP</li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Shop">Shipping & Returns</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Order">Track Your Order</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="StoreFinder">Store Finder</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="FAGs">FAQs</a></li>
-                </ul>
-            </div>
+        <div class="footer flex justify-center">
+            <div class="container flex justify-space-between align-center">
+                <div class="help">
+                    <ul>
+                        <li>HELP</li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Shop">Shipping & Returns</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Order">Track Your Order</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="StoreFinder">Store Finder</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="FAGs">FAQs</a></li>
+                    </ul>
+                </div>
 
-            <div class="about">
-                <ul>
-                    <li>ABOUT</li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Careers">Careers</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Affiliate">Become an Affiliate</a></li>
-                </ul>
-            </div>
+                <div class="about">
+                    <ul>
+                        <li>ABOUT</li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Careers">Careers</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Affiliate">Become an Affiliate</a></li>
+                    </ul>
+                </div>
 
-            <div class="categories">
-                <ul>
-                    <li>CATEGORIES</li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Shirts">Shirts</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Jeans">Jeans</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Footwear">Footwear</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Accessories">Accessories</a></li>
-                </ul>
-            </div>
+                <div class="categories">
+                    <ul>
+                        <li>CATEGORIES</li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Shirts">Shirts</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Jeans">Jeans</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Footwear">Footwear</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="Accessories">Accessories</a></li>
+                    </ul>
+                </div>
 
-            <div class="new-sellers">
-                <p>JOIN THE LIST AND RECEIVE 15% OFF YOUR FIRST ORDER</p>
+                <div class="new-sellers">
+                    <p>JOIN THE LIST AND RECEIVE 15% OFF YOUR FIRST ORDER</p>
 
-                <form>
-                    <input placeholder="Your Email" type="email"/>
-                    <button type="submit">SEND</button>
-                </form>
+                    <form class="flex ">
+                        <input placeholder="Your Email" type="email" />
+                        <button type="submit">SEND</button>
+                    </form>
 
-                <ul>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
-                </ul>
+                    <ul class="flex">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <div class="copyright">
-            <ul>
-                <li><a asp-area="" asp-controller="Home" asp-action="Index">© Uniso 2020. All Rights Reserved</a></li>
-                <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy Policy</a></li>
-                <li><a>Terms & Conditions</a></li>
-            </ul>
+        <div class="copyright flex justify-center">
+            <div class="container flex justify-space-between align-center">
+                <ul class="flex align-center">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">© Uniso 2020. All Rights Reserved</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy Policy</a></li>
+                    <li><a>Terms & Conditions</a></li>
+                </ul>
 
-            <img alt="payment methods" src="~/img/Payment Methods.png" />
+                <div class="logo flex">
+                    <img alt="visa" src="~/img/visa.png"/>
+                    <img alt="paypal" src="~/img/paypal.png" />
+                    <img alt="circle" src="~/img/circle.png" />
+                    <img alt="discover" src="~/img/discover.png" />
+                    <img alt="unknown" src="~/img/unknown.png" />
+                    <img alt="amex" src="~/img/amex.png" />
+                </div>
+
+            </div>
         </div>
     </footer>
 

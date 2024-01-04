@@ -1,6 +1,17 @@
+/* general */
+
 @font-face {
     font-family: jost;
     src: url(../font/Jost.ttf);
+}
+
+:root {
+    --grey: hsl(220, 18%, 97%);
+    --dark-grey: hsl(0, 0%, 93%);
+    --light-black: hsl(0, 0%, 40%);
+    --black: hsl(0, 0%, 0%);
+    --red: hsl(7, 91%, 53%);
+    --white: hsl(0, 0%, 100%);
 }
 
 html {
@@ -17,8 +28,9 @@ html {
 }
 
 input {
-    font-family: jost;
     border: none;
+
+    font-family: jost;
 }
 
 input:focus-visible {
@@ -30,48 +42,60 @@ ul {
 }
 
 a {
-    text-decoration: none;
     color: black;
+
+    text-decoration: none;
 }
 
 button {
-    border: none;
+    cursor: pointer;
+
     background-color: transparent;
+    border: none;
 }
 
-header .top-bar {
+.container {
+    width: min(95%, 115rem);
+}
+
+.flex {
     display: flex;
-    justify-content: space-around;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
     align-items: center;
+}
+
+/* header */
+header .top-bar {
+    background-color: var(--grey);
+
     padding: 1.2rem;
-    background-color: #F5F6F8;
 }
 
 header .top-bar p {
+    color: var(--light-black);
     font-size: 1.6rem;
-    color: #666666;
 }
 
 header .top-bar .language {
-    display: flex;
-    align-items: center;
     gap: 0.5rem;
 }
 
 header .top-bar p {
+    color: var(--black);
     font-size: 1.4rem;
-    color: black;
-}
-
-header .header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 header .header nav ul {
-    display: flex;
-    align-items: center;
     gap: 1.4rem;
 
     font-size: 1.6rem;
@@ -79,27 +103,24 @@ header .header nav ul {
 
 header .header nav ul li a {
     display: inline-block;
+
     padding: 1.2rem;
 }
 
-header .header div:last-child {
-    display: flex;
-    align-items: center;
-}
 
-header .header div:last-child > * {
+header .header .container div:last-child > * {
     height: 5rem;
+
+    border: 0.1rem solid var(--dark-grey);
+
     padding: 1.8rem;
-    border: 0.1rem #EEE solid;
 }
 
 header .header svg {
     font-size: 1.6rem;
 }
 
-header .header div:last-child form {
-    display: flex;
-    align-items: center;
+header .header .container div:last-child form {
     gap: 0.5rem;
 }
 
@@ -109,11 +130,16 @@ header .header .cart {
 
 header .header .cart::after {
     content: "";
+
     display: block;
+
     width: 0.8rem;
     height: 0.8rem;
+
     border-radius: 50%;
-    background-color: red;
+
+    background-color: var(--red);
+
     position: absolute;
     bottom: 1.1rem;
     right: 1.7rem;
@@ -121,42 +147,44 @@ header .header .cart::after {
 
 
 header .promotional{
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    background-color: var(--black);
+
     padding: 1.2rem;
+
+    color: var(--white);
     font-size: 1.4rem;
 }
 
-footer .footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+/* footer */
 
-    background-color: hsl(220, 18%, 97%);
+footer .footer {
+    background-color: var(--grey);
 
     padding: 4rem 0;
 }
 
 footer .footer ul li:first-child, footer .footer .new-sellers p {
+    padding-bottom: 1.6rem;
+
     font-weight: bold;
     font-size: 1.6rem;
-    padding-bottom: 1.6rem;
 }
 
 footer .footer ul li a {
-    font-size: 1.6rem;
     display: inline-block;
+
     padding: 0.5rem 0;
+
+    font-size: 1.6rem;
 }
 
 footer .footer .new-sellers form {
-    display: flex;
+    background-color: var(--white);
+
     height: 4rem;
-    background-color: white;
-    border: 0.1rem solid #EEEEEE;
+
+    border: 0.1rem solid var(--dark-grey);
+
     padding: 0 1.4rem;
 }
 
@@ -169,32 +197,38 @@ footer .footer .new-sellers form button {
 }
 
 footer .footer .new-sellers ul {
-    display: flex;
     gap: 1.2rem;
 }
 
 footer .copyright {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 1.4rem;
 }
 
 footer .copyright ul {
-    display: flex;
-    align-items: center;
     font-size: 1.4rem;
 }
 
 footer .copyright ul li {
+    border-left: 0.1rem solid var(--dark-grey);
+
     padding: 0 1.2rem;
-    border-left: 0.1rem solid #EEEEEE;
 }
 
 footer .copyright ul li:first-child {
     border-left: none;
 }
 
+footer .copyright .logo {
+    gap: 0.2rem;
+}
+
+footer .copyright .logo img {
+    border: 0.1rem solid var(--grey);
+
+    border-radius: 0.2rem;
+}
+
+/* url */
 .url {
     background-color: white;
     color: black;
