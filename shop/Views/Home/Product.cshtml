@@ -1,0 +1,107 @@
+﻿@{
+    ViewData["Title"] = "- Product";
+}
+
+<div class="url">
+    <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+    /
+    <a asp-area="" asp-controller="Home" asp-action="Product" class="deactive">Under Armour Training Stretch Woven Half Zip Jacket</a>
+</div>
+
+
+<div class="product flex justify-center">
+    <div class="container flex">
+        <div class="images">
+            <img alt="product image" src="~/img/product1.png" />
+            <img alt="product image" src="~/img/product2.png" />
+            <img alt="product image" src="~/img/product3.png" />
+            <img alt="product image" src="~/img/product4.png" />
+        </div>
+
+        <img alt="product image" src="~/img/product1.png" class="main-image"/>
+
+        <div class="info">
+            <div>
+                <h1>Under Armour Training Stretch Woven Half Zip Jacket.</h1>
+
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star disable"></i>
+                    <p>16 Reviews</p>
+                </div>
+
+                <p class="price">$200</p>
+            </div>
+
+            <div class="color">
+                <p>COLOR<span> White</span></p>
+                <div>
+                    <button style="background-color: blue"></button>
+                    <button style="background-color: white"></button>
+                    <button style="background-color: grey"></button>
+                    <button style="background-color: red"></button>
+                </div>
+            </div>
+
+            <div class="size">
+                <div>
+                    <p>SIZE<span> S</span></p>
+                    <a>Size Guide</a>
+                </div>
+                <div>
+                    <button>S</button>
+                    <button>M</button>
+                    <button>L</button>
+                    <button>XL</button>
+                    <button>2XL</button>
+                </div>
+            </div>
+
+            <div class="quantity">
+                <p>QUANTITY</p>
+
+                <div>
+                    <button>-</button>
+                    <input value="1" />
+                    <button>+</button>
+                </div>
+            </div>
+
+            <div class="buy">
+                <a class="cart">ADD TO BAG</a>
+                <a class="checkout">BUY NOW</a>
+
+                <div>
+                    <a><i class="fa-regular fa-heart"></i> ADD TO WISHLIST</a>
+                    <a><i class="fa-solid fa-code-compare"></i> COMPARE</a>
+                </div>
+            </div>
+
+            <div>
+                <p>SKU: <span>051</span></p>
+                <p>CATEGORY: <span>T-Shirts</span></p>
+                <p>TAGS: <span>Shirt, Men</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="description flex justify-center">
+    <div class="container flex">
+        <div class="option">
+            <button>DESCRIPTION</button>
+            <button>FEATURE & DETAILS</button>
+            <button>SHIPPING & RETURNS</button>
+            <button>REVIEWS</button>
+        </div>
+        <div class="first-des">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+        </div>
+    </div>
+</div>

@@ -769,5 +769,192 @@ footer .copyright .logo img {
     color: white;
     font-size: 1.4rem;
     font-weight: bold;
-    flex: 3
+    flex: 3;
+}
+
+.product {
+    padding: 4rem;
+}
+
+.product .container {
+    gap: 1.4rem;
+}
+
+.product .images {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    flex: 10;
+}
+
+.product .main-image, .product .info {
+    flex: 45;
+}
+
+.product .info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.product .info h1 {
+    font-size: 2.4rem;
+    font-weight: normal;
+}
+
+.product .info div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.product .info div:first-child div {
+    display: flex;
+    align-items: center;
+}
+
+.product .info div:first-child div svg {
+    font-size: 1.6rem;
+}
+
+.product .info div:first-child div p{
+    padding-left: 1.4rem;
+    color: #666;
+    font-size: 1.6rem;
+}
+
+.product .info .disable {
+    color: #EEE;
+}
+
+
+.product .info div:first-child .price{
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.product .info .color p, .product .info .size div:first-child p, .product .info .quantity p{
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-bottom: 1.4rem;
+}
+
+.product .info .color p span, .product .info .size div:first-child p span {
+    font-size: 1.6rem;
+    color: #666;
+    font-weight: normal;
+}
+
+.product .info .color div,.product .info .size div:last-child {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.product .info .color div button, .product .info .size div:last-child button{
+    width: 4rem;
+    height: 4rem;
+}
+
+.product .info .size div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product .info .size div:first-child a{
+    text-decoration:underline;
+    font-size: 1.4rem;
+}
+
+.product .info .size div:last-child button {
+    border: 0.2rem solid #EEE;
+}
+
+.product .info .quantity div input {
+    width: 4rem;
+    border: 0.2rem solid #EEE;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+    height: 3.2rem;
+}
+
+.product .info .quantity div button {
+    border: 0.2rem solid #EEE;
+    width: 3rem;
+    height: 3.2rem;
+}
+
+.product .info .buy {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.product .info .buy .cart {
+    display: inline-block;
+    width: 100%;
+    padding: 0.8rem 0;
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product .info .buy .checkout {
+    display: inline-block;
+    width: 100%;
+    padding: 0.8rem 0;
+    border: 0.2rem solid black;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product .info .buy div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.product .info .buy div > * {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.product .info div:last-child p {
+    font-size: 1.4rem;
+    color: #777;
+    padding: 0.4rem;
+}
+
+.product .info div:last-child p span{
+    font-weight: bold;
+    color: black;
+}
+
+.description .container {
+    flex-direction: column;
+    padding: 5rem;
+}
+
+.description .container .option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.description .container .option button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.description .container .first-des {
+    padding: 3rem;
+    background-color: #F5F6F8;
+    font-size: 1.6rem;
 }

@@ -30,8 +30,11 @@ namespace shop.Controllers
 
         public IActionResult Cart()
         {
-            List<Dictionary<string, string>> cart = new List<Dictionary<string, string>>();
-            ViewBag.cart = cart;
+            return View();
+        }
+
+        public IActionResult Product()
+        {
             return View();
         }
 
