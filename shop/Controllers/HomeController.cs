@@ -18,11 +18,6 @@ namespace shop.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
-
         public IActionResult Login()
         {
             return View();
@@ -35,6 +30,8 @@ namespace shop.Controllers
 
         public IActionResult Cart()
         {
+            List<Dictionary<string, string>> cart = new List<Dictionary<string, string>>();
+            ViewBag.cart = cart;
             return View();
         }
 

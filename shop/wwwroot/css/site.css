@@ -54,6 +54,10 @@ button {
     border: none;
 }
 
+hr {
+    border: 0.1rem solid #EEE;
+}
+
 .container {
     width: min(95%, 115rem);
 }
@@ -234,6 +238,7 @@ footer .copyright .logo img {
     color: black;
     padding: 1.2rem 1.2rem 1.2rem 6rem;
     font-size: 1.4rem;
+    border-bottom: 0.1rem solid var(--dark-grey);
 }
 
 .url .deactive {
@@ -564,4 +569,205 @@ footer .copyright .logo img {
     display: flex;
     justify-content: center;
     gap: 2rem;
+}
+
+.cart-title {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-title h1 {
+    font-size: 4.8rem;
+    font-weight: bold;
+}
+
+.cart-title p {
+    font-size: 1.6rem;
+    color: #666;
+}
+
+.cart-box .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+    padding: 3rem 0 5rem 0;
+}
+
+.cart-box table{
+    flex: 7;
+     border-collapse: collapse;
+}
+
+.cart-box table tr {
+    border: 0.2rem solid #EEE;
+}
+
+.cart-box table tr th {
+    padding: 1.4rem 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.cart-box table tr td {
+    padding: 2rem 0;
+    font-size: 1.4rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.cart-box table tr .product-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.cart-box table tr .product-name p {
+    text-align: start;
+}
+
+.cart-box table tr .product-price {
+    font-weight: bold;
+}
+
+.cart-box table tr .product-count input {
+    width: 4rem;
+    border: 0.2rem solid #EEE;
+    border-left: 0;
+    border-right: 0;
+    text-align: center;
+    height: 3.2rem;
+}
+
+.cart-box table tr .product-count button {
+    border: 0.2rem solid #EEE;
+    width: 3rem;
+    height: 3.2rem;
+}
+
+.cart-box table .update, .cart-box table .update button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.cart-box table .update p, .cart-box table .total-price p{
+    font-weight: bold;
+}
+
+.cart-box .checkout {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.cart-box .checkout div:first-child {
+    box-shadow: 0px 12px 30px 0px #0000000F;
+    background-color: white;
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.cart-box .checkout .cart-total {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.cart-box .checkout .sub-total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-box .checkout .sub-total p:first-child {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.cart-box .checkout .sub-total p:last-child {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.cart-box .checkout .shopping {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-box .checkout .shopping p:first-child {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.cart-box .checkout .shopping form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.cart-box .checkout .shopping form label {
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.cart-box .checkout .shopping form label span{
+    color: #999;
+}
+
+.cart-box .checkout .total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-box .checkout .total p:first-child {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.cart-box .checkout .total p:last-child {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.cart-box .checkout a {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 1.6rem 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cart-box .discount p{
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 1.4rem;
+}
+
+.cart-box .discount form {
+    display: flex;
+    gap: 0.8rem;
+    height: 4rem;
+}
+
+.cart-box .discount form input {
+    border: 0.2rem solid #EEE;
+    flex: 7;
+    padding-left: 1.4rem;
+}
+
+.cart-box .discount form button {
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    flex: 3
 }

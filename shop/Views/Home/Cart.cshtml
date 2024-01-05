@@ -8,11 +8,107 @@
     <a asp-area="" asp-controller="Home" asp-action="Cart" class="deactive">Cart</a>
 </div>
 
-<div>
+<div class="cart-title">
     <h1>My Cart</h1>
     <p>Items are reserved for 60 minutes</p>
 </div>
 
-<div>
+<div class="cart-box flex align-center justify-center">
+    <div class="container">
+        <table>
+            <tr>
+                <th>PRODUCT</th>
+                <th>PRICE</th>
+                <th>QUANTITY</th>
+                <th>TOTAL</th>
+            </tr>
 
+            <tr>
+                <td class="product-name">
+                    <button><i class="fa-solid fa-close"></i></button>
+                    <img alt="product image" src='~/img/cart.png' />
+                    <p>
+                        Funny Shorts with Mesh <br />
+                        Lining Swimwear <br />
+                        Bathing Suits
+                    </p>
+                </td>
+                <td>$300</td>
+                <td class="product-count"><button>-</button><input value="1" /><button>+</button></td>
+                <td class="product-price">$300</td>
+            </tr>
+
+            <tr>
+                <td class="product-name">
+                    <button><i class="fa-solid fa-close"></i></button>
+                    <img alt="product image" src='~/img/cart.png' />
+                    <p>
+                        Funny Shorts with Mesh <br />
+                        Lining Swimwear <br />
+                        Bathing Suits
+                    </p>
+                </td>
+                <td>$300</td>
+                <td class="product-count"><button>-</button><input value="1" /><button>+</button></td>
+                <td class="product-price">$300</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="update">
+                    <button>
+                        <i class="fa-solid fa-refresh"></i>
+                        <p>UPDATE CARD</p>
+                    </button>
+                </td>
+                <td></td>
+                <td>Sub-total</td>
+                <td class="total-price"><p>$600</p></td>
+            </tr>
+        </table>
+
+        <div class="checkout">
+            <div>
+                <p class="cart-total">CART TOTAL</p>
+                <div class="sub-total">
+                    <p>Sub-total</p>
+                    <p>$600</p>
+                </div>
+                <hr />
+                <div class="shopping">
+                    <p>Shipping</p>
+                    <form>
+                        <label>
+                            Flat rate <span>$10</span>
+                            <input type="radio" name="shopping" />
+                        </label>
+
+                        <label>
+                            Free shipping
+                            <input type="radio" name="shopping" />
+                        </label>
+
+                        <label>
+                            Local pickup
+                            <input type="radio" name="shopping"/>
+                        </label>
+                    </form>
+                </div>
+                <hr />
+                <div class="total">
+                    <p>Total</p>
+                    <p>$610</p>
+                </div>
+                <a href="#">PROCEED TO CHECKOUT</a>
+            </div>
+
+            <div class="discount">
+                <p>Got a Discount Code?</p>
+                <form>
+                    <input placeholder="Enter Your Code" />
+                    <button type="submit">APPLY</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
 </div>
