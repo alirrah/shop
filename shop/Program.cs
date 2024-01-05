@@ -1,3 +1,7 @@
+global using Microsoft.EntityFrameworkCore;
+global using shop.Models;
+global using shop.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
