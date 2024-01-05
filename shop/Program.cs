@@ -1,8 +1,11 @@
 global using Microsoft.EntityFrameworkCore;
 global using shop.Models;
 global using shop.Data;
+global using shop.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddTransient<IEmailSender, EmailSender>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
